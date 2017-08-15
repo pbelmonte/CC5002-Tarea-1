@@ -1,0 +1,48 @@
+h1 {
+    color: rgb(162, 142, 12);
+    background-color: rgb(252, 221, 100);
+    font-size: 350%;
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    background-color: rgb(255, 157, 157);
+}
+
+th {
+    background-color: rgb(255, 87, 51);
+}
+
+th, td {
+    padding: 25px;
+}
+
+tr.clickable:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+.boton {
+    padding: 15px;
+    margin-left: 550px;
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+.form {
+    background-color: rgb(188, 188, 188); 
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 16px;
+}
+
+body {
+    background-image: url(Background.jpg);
+}
