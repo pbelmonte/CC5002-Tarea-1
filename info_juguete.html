@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pelota</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="info">
+    <h2>Pelota</h2>
+    <table class="info">
+        <tr>
+            <th class="info">Fecha Ingreso</th>
+            <th class="info">Región</th>
+            <th class="info">Comuna</th>
+            <th class="info">Calle y número</th>
+            <th class="info">N° Comentarios</th>
+            <th class="info">N° Fotos</th>
+            <th class="info">Email contacto</th>
+        </tr>
+        <tr>
+        	<td class="info">13/08/2017</td>
+        	<td class="info">Metropolitana</td>
+        	<td class="info">Providencia</td>
+            <td class="info">Diego de Almagro 3049</td>
+        	<td class="info">3</td>
+        	<td class="info">3</td>
+        	<td class="info">ejemplo@gmail.com</td>
+        </tr>
+    </table>
+    <br>
+    <h3>Fotografías</h3>
+
+    <button id="boton1" class="myBtn_multi"></button>
+    <button id="boton2" class="myBtn_multi"></button>
+    <button id="boton3" class="myBtn_multi"></button>
+
+    <div class="modal modal_multi">
+        <div class="modal-content">       
+            <span class="close close_multi">×</span>    
+            <img src="imagenes/jabulani1.jpg">
+            <div class="descripcion">
+                <h5>Pelota</h5>
+                <p>Pelota del mundial de sudáfrica en excelentes condiciones.</p>
+            </div>
+        </div>
+    </div>
+
+    <div  class="modal modal_multi">        
+        <div class="modal-content">
+            <span class="close close_multi">×</span>
+            <img src="imagenes/jabulani2.jpg">
+            <div class="descripcion">
+                <h5>Pelota</h5>
+                <p>Pelota del mundial de sudáfrica en excelentes condiciones.</p>
+            </div>
+        </div>
+    </div>
+
+    <div  class="modal modal_multi">        
+        <div class="modal-content">
+            <span class="close close_multi">×</span>
+            <img src="imagenes/jabulani3.jpg">
+            <div class="descripcion">
+                <h5>Pelota</h5>
+                <p>Pelota del mundial de sudáfrica en excelentes condiciones.</p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <h3>Comentarios</h3>
+
+    <div class="comentarios">
+        <div id="comentario1" class="comentario">
+            <span class="comentarista">Juan Pérez</span>
+            <span class="fecha-comentario">13/08/2017</span>            
+            <div class="texto-comentario"><p>Que genial!!!!1 es una excelente pelota.</p></div>
+        </div>
+        <div id="comentario2" class="comentario">
+            <span class="comentarista">José Gallardo</span>
+            <span class="fecha-comentario">15/08/2017</span>
+            <div class="texto-comentario"><p>Es la original???</p></div>
+        </div>
+        <div id="comentario3" class="comentario">
+            <span class="comentarista">María González</span>
+            <span class="fecha-comentario">16/08/2017</span>            
+            <div class="texto-comentario"><p>No creo que eso sea taaan importante José, lo que importa es que sirva para jugar.</p></div>
+        </div>
+    </div>
+
+    <button type="button" id="nuevo-comentario" class="boton">Agregar Nuevo Comentario a este juguete</button>
+
+    <script type="text/javascript" src="scripts/expandirFoto.js"></script>
+</body>
+</html>
