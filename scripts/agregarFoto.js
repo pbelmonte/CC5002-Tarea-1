@@ -5,7 +5,9 @@ function agregarFotos() {
 	    var input = document.createElement('input');
 	    input.type = "file";
 	    var nombre = "foto-juguete[" + foto + "]";
-	    input.name = "nombre";
+	    input.name = nombre;
+	    input.id = nombre;
+	    input.class = "foto-juguete";
 	    foto += 1;
 	    var linebreak = document.createElement("br");
 	    document.getElementById('fotos').appendChild(linebreak);

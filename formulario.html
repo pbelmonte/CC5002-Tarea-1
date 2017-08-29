@@ -7,25 +7,25 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script type="text/javascript" src="scripts/comunas.js" ></script>
 	<script type="text/javascript" src="scripts/agregarFoto.js"></script>
+	<script type="text/javascript" src="scripts/validate.js"></script>
 </head>
 <body class="formulario">
 	<h1>Nueva Donación</h1>
 	<div class="form">
-	    <form method="POST" action="index.html">
-	    	Nombre Juguete<br><input type="text" name="nombre-juguete" size="40" maxlength="80"><br>
-	    	Descripción<br>
-	    	<textarea name="descripcion-juguete" rows="5" cols="100" maxlength="1000"></textarea><br>
-	    	Fotografía<br>
-	    	<input type="file" name="foto-juguete[1]">
+	    <form method="POST" action="index.html" onsubmit="return validateForm();">
+	    	Nombre Juguete<span class="asterisco">*</span><br><input type="text" id="nombre-juguete" name="nombre-juguete" size="40" maxlength="80"><br><br>
+	    	Descripción<br><textarea id="descripcion-juguete" name="descripcion-juguete" rows="5" cols="61" maxlength="1000"></textarea><br><br>
+	    	Fotografía<span class="asterisco">*</span><br>
+	    	<input type="file" id="foto-juguete[1]" name="foto-juguete[1]" class="foto-juguete">
 	    	<button type="button" onclick="agregarFotos();">Agregar otra fotografía</button>
-	    	<div id="fotos"></div>
-	    	Región Entrega<br><select name="region-juguete" id="regiones"></select><br>
-	        Comuna Entrega<br><select name="comuna-juguete" id="comunas"></select><br>
-	        Calle y número<br><input type="text" name="calle-numero" size="60" maxlength="150"><br>
-	        Nombre contacto<br><input type="text" name="nombre-contacto" size="60" maxlength="200"><br>
-	        Email contacto<br><input type="text" name="email-contacto" size="40" maxlength="100"><br>
-	        Fono contacto<br><input type="text" name="fono-contacto" size="20" maxlength="20"><br>
-	    	<br><button type="submit">Ingresar este juguete</button>
+	    	<div id="fotos"></div><br>
+	    	Región Entrega<span class="asterisco">*</span><br><select name="region-juguete" id="regiones"></select><br><br>
+	        Comuna Entrega<span class="asterisco">*</span><br><select name="comuna-juguete" id="comunas"></select><br><br>
+	        Calle y número<span class="asterisco">*</span><br><input type="text" id="calle-numero" name="calle-numero" size="60" maxlength="150"><br><br>
+	        Nombre contacto<span class="asterisco">*</span><br><input type="text" id="nombre-contacto" name="nombre-contacto" size="60" maxlength="200"><br><br>
+	        Email contacto<span class="asterisco">*</span><br><input type="text" id="email-contacto" name="email-contacto" size="40" maxlength="100"><br><br>
+	        Fono contacto<br><input type="text" id="fono-contacto" name="fono-contacto" size="20" maxlength="20"><br><br>
+	    	<br><button type="submit" id="boton-ingresar-juguete" class="boton">Ingresar este juguete</button>
 	    </form>
 	</div>
 </body>

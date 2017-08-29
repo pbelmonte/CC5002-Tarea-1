@@ -4,10 +4,11 @@
     <title>Pelota</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body class="info">
-    <h2>Pelota</h2>
+    <h2>Pelota</h2><br><br>
     <table class="info">
         <tr>
             <th class="info">Fecha Ingreso</th>
@@ -17,6 +18,8 @@
             <th class="info">N° Comentarios</th>
             <th class="info">N° Fotos</th>
             <th class="info">Email contacto</th>
+            <th class="info">Nombre contacto</th>
+            <th class="info">Fono contacto</th>
         </tr>
         <tr>
         	<td class="info">13/08/2017</td>
@@ -25,20 +28,22 @@
             <td class="info">Diego de Almagro 3049</td>
         	<td class="info">3</td>
         	<td class="info">3</td>
-        	<td class="info">ejemplo@gmail.com</td>
+        	<td class="info">ejemplo1@gmail.com</td>
+            <td class="info">Daniela Álvarez</td>
+            <td class="info">+56912345678</td>
         </tr>
     </table>
-    <br>
+    <br><br>
     <h3>Fotografías</h3>
 
-    <button id="boton1" class="myBtn_multi"></button>
-    <button id="boton2" class="myBtn_multi"></button>
-    <button id="boton3" class="myBtn_multi"></button>
+    <button id="boton1" class="boton_imagen"></button>
+    <button id="boton2" class="boton_imagen"></button>
+    <button id="boton3" class="boton_imagen"></button>
 
     <div class="modal modal_multi">
         <div class="modal-content">       
             <span class="close close_multi">×</span>    
-            <img src="imagenes/jabulani1.jpg">
+            <img src="imagenes/jabulani1.jpg" alt="Foto Jabulani 1">
             <div class="descripcion">
                 <h5>Pelota</h5>
                 <p>Pelota del mundial de sudáfrica en excelentes condiciones.</p>
@@ -49,7 +54,7 @@
     <div  class="modal modal_multi">        
         <div class="modal-content">
             <span class="close close_multi">×</span>
-            <img src="imagenes/jabulani2.jpg">
+            <img src="imagenes/jabulani2.jpg" alt="Foto Jabulani 2">
             <div class="descripcion">
                 <h5>Pelota</h5>
                 <p>Pelota del mundial de sudáfrica en excelentes condiciones.</p>
@@ -60,14 +65,14 @@
     <div  class="modal modal_multi">        
         <div class="modal-content">
             <span class="close close_multi">×</span>
-            <img src="imagenes/jabulani3.jpg">
+            <img src="imagenes/jabulani3.jpg" alt="Foto Jabulani 3">
             <div class="descripcion">
                 <h5>Pelota</h5>
                 <p>Pelota del mundial de sudáfrica en excelentes condiciones.</p>
             </div>
         </div>
     </div>
-    <br><br>
+    <br><br><br>
     <h3>Comentarios</h3>
 
     <div class="comentarios">
@@ -88,8 +93,21 @@
         </div>
     </div>
 
-    <button type="button" id="nuevo-comentario" class="boton">Agregar Nuevo Comentario a este juguete</button>
+    <button type="button" id="agregar-comentario" class="boton" onclick="agregarComentario();">Agregar Nuevo Comentario a este juguete</button>
+    <div id="nuevo-comentario">
+        <h5>Nuevo comentario</h5><br>
+        <form method="POST" action="#">
+            Nombre <input type="text" name="nombre-comentarista" size="40" maxlength="80"><br><br>
+            Comentario <textarea name="texto-nuevo-comentario" rows="10" cols="100" maxlength="1000"></textarea>
+            <button type="reset" id="boton-submit" class="boton" onclick="agregar();">Agregar Comentario</button>
+            <button type="reset" id="boton-cancelar" class="boton" onclick="cancelar();">Cancelar</button>
+        </form>
+    </div>
+    <br>
+    <button type="button" id="volver-inicio" class="boton" onclick="location.href='index.html'">Volver a Inicio<i class="w3-margin-left fa fa-home"></i></button>
 
     <script type="text/javascript" src="scripts/expandirFoto.js"></script>
+    <script type="text/javascript" src="scripts/agregarComentario.js"></script>
+
 </body>
 </html>

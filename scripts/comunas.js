@@ -1,3 +1,5 @@
+// Codigo sacado de https://codepen.io/sergiohidalgo/pen/yNjdqg
+
 var RegionesYcomunas = {
 
 	"regiones": [{
@@ -95,14 +97,14 @@ jQuery(document).ready(function () {
 	});
 	jQuery('#comunas').change(function () {
 		if (jQuery(this).val() == 'sin-region') {
-			alert('selecciones Región');
+			alert('Seleccione Región');
 		} else if (jQuery(this).val() == 'sin-comuna') {
-			alert('selecciones Comuna');
+			alert('Seleccione Comuna');
 		}
 	});
 	jQuery('#regiones').change(function () {
 		if (jQuery(this).val() == 'sin-region') {
-			alert('selecciones Región');
+			alert('Seleccione Región');
 		}
 	});
 
