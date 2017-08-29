@@ -41,8 +41,8 @@
     <button id="boton3" class="boton_imagen"></button>
 
     <div class="modal modal_multi">
-        <div class="modal-content">       
-            <span class="close close_multi">×</span>    
+        <span class="close close_multi">×</span>
+        <div class="modal-content"> 
             <img src="imagenes/jabulani1.jpg" alt="Foto Jabulani 1">
             <div class="descripcion">
                 <h5>Pelota</h5>
@@ -51,9 +51,9 @@
         </div>
     </div>
 
-    <div  class="modal modal_multi">        
+    <div  class="modal modal_multi">
+        <span class="close close_multi">×</span>        
         <div class="modal-content">
-            <span class="close close_multi">×</span>
             <img src="imagenes/jabulani2.jpg" alt="Foto Jabulani 2">
             <div class="descripcion">
                 <h5>Pelota</h5>
@@ -62,9 +62,9 @@
         </div>
     </div>
 
-    <div  class="modal modal_multi">        
+    <div  class="modal modal_multi">
+        <span class="close close_multi">×</span>        
         <div class="modal-content">
-            <span class="close close_multi">×</span>
             <img src="imagenes/jabulani3.jpg" alt="Foto Jabulani 3">
             <div class="descripcion">
                 <h5>Pelota</h5>
@@ -98,7 +98,7 @@
         <h5>Nuevo comentario</h5><br>
         <form method="POST" action="#">
             Nombre <input type="text" name="nombre-comentarista" size="40" maxlength="80"><br><br>
-            Comentario <textarea name="texto-nuevo-comentario" rows="10" cols="100" maxlength="1000"></textarea>
+            Comentario<br><textarea name="texto-nuevo-comentario" rows="10" cols="100" maxlength="1000"></textarea><br><br>
             <button type="reset" id="boton-submit" class="boton" onclick="agregar();">Agregar Comentario</button>
             <button type="reset" id="boton-cancelar" class="boton" onclick="cancelar();">Cancelar</button>
         </form>

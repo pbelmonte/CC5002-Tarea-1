@@ -50,9 +50,13 @@ table.info {
     margin-left: 5px;
 }
 
+div.boton {
+    text-align: center;
+}
+
 button#nueva-donacion {
     padding: 15px;
-    margin-left: 550px;
+    margin: 0 auto;
     margin-top: 18px;
     font-family: verdana;
     font-size: 18px;
@@ -66,11 +70,12 @@ button.boton:hover {
 }
 
 .form {
+    display: inline-block;
     background-color: rgba(90, 150, 170, 0.9); 
-    margin-left: 400px;
-    margin-right: 400px;
+    margin: auto;
     padding: 20px;
     font-size: 110%;
+    text-align: left;
 }
 
 .asterisco {
@@ -102,6 +107,7 @@ body.formulario {
     background-position: right bottom, left top, right top, center;
     background-size: 15%, 15%, 15%, 90%;
     background-attachment: fixed;
+    text-align: center;
 }
 
 body.info {
@@ -134,22 +140,24 @@ textarea {
 
 .modal-content {
     background-color: rgba(0, 0, 0, .0);
-    margin: auto;
-    padding: 0px;
+    padding: 20px;
     width: 100%;
+    margin: auto;
+    margin-top: 40px;
 }
 
 .modal-content img {
+    display: block;
     width: 800px;
     height: 600px;
+    margin: 0 auto;
     margin-top: 15px;
-    margin-left: 250px;
     border-radius: 10px;
 }
 
 .descripcion {
-    margin-left: 250px;
     width: 800px;
+    margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 30px;
     border: 1px solid black;
